@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!-- 标题 -->
+
+            <TextView
+                android:id="@+id/temp_title"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/me_template_title"
+                android:textColor="#666"
+                android:textSize="18sp" />
+
+            <!-- 模板名称 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/me_template_name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 设计师 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/me_template_des_name"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_des_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 空间大小 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/me_template_size"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_size"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 版本 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/me_template_version"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_version"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 使用人数 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/me_template_user_count"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_user_count"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:textSize="16sp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+            <!-- 资源简介 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/me_template_contruduct"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/template_txt_contruduct"
+                    android:layout_width="fill_parent"
+                     android:textSize="16sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 名片列表 -->
+    <!-- 0|15|1|名片资料 arr[0] 大于0 标示离上一个item有分割，数字代表分割高度 arr[1]标示下划线隔左边的距离 arr[2]文字离左边距离  arr[3]标示 indix， arr[4]名片资料是文字描述 arr[5] 右边文字 -->
+    <string-array name="mp_main_list_item">
+        <item>0|60|15|1|公司</item>
+        <item>0|60|15|2|地址</item>
+        <item>0|60|15|3|手机</item>
+        <item>0|60|15|4|电话</item>
+        <item>0|60|15|5|邮箱</item>
+        <item>0|0|15|6|个性签名</item>
+        <item>30|15|20|7|新浪微博</item>
+        <item>0|0|20|8|QQ空间</item>
+    </string-array>
+
+    <!-- 设置 -->
+    <!-- 认证和管理员账户，有认证服务一栏 -->
+    <string-array name="sz_main_list_item">
+        <item>20|15|20|1|隐私</item>
+        <item>0|15|20|2|通用</item>
+        <item>0|0|20|3|认证服务</item>
+        <item>30|0|20|4|关于微企</item>
+    </string-array>
+    <!-- 隐私 -->
+    <string-array name="sz_ys_list_item">
+        <item>30|15|20|1|修改登录密码</item>
+        <item>0|0|20|2|密保设置</item>
+    </string-array>
+    <string-array name="sz_ty_list_item">
+        <item>30|15|20|1|多语言</item>
+        <item>0|0|20|2|清除微企缓存</item>
+    </string-array>
+    <!-- 关于微企 -->
+    <string-array name="about_wq_list_item">
+        <item>0|15|20|1|欢迎界面</item>
+        <item>0|15|20|2|功能介绍</item>
+        <item>0|15|20|3|意见反馈</item>
+        <item>0|0|20|4|版本更新</item>
+    </string-array>
+    <!-- 我 主模块 -->
+
+
+    <!-- 在野用户 -->
+    <string-array name="me_fragment_zy_list_item">
+
+        <!-- <item>20|60|15|1|手机网站</item> -->
+        <item>20|60|15|2|我的名片</item>
+        <item>0|60|15|4|我的收藏</item>
+        <item>0|0|15|3|我的相册</item>
+        <item>20|0|15|6|组织</item>
+        <item>20|0|15|5|设置</item>
+    </string-array>
+    <!-- 收编用户 -->
+    <string-array name="me_fragment_sb_list_item">
+        <item>20|60|15|2|我的名片</item>
+        <item>0|60|15|4|我的收藏</item>
+        <item>0|0|15|3|我的相册</item>
+        <item>20|0|15|1|手机网站</item>
+        <item>20|0|15|5|设置</item>
+    </string-array>
+    <!-- 管理员 -->
+    <string-array name="me_fragment_gly_list_item">
+        <item>20|60|15|2|我的名片</item>
+        <item>0|60|15|4|我的收藏</item>
+        <item>0|0|15|3|我的相册</item>
+        <item>20|0|15|7|员工</item>
+        <item>20|0|15|5|设置</item>
+    </string-array>
+    <!-- 子管理员 -->
+    <string-array name="me_fragment_zgly_list_item">
+        <item>20|60|15|2|我的名片</item>
+        <item>0|60|15|4|我的收藏</item>
+        <item>0|0|15|3|我的相册</item>
+        <item>20|0|15|7|员工</item>
+        <item>20|0|15|5|设置</item>
+    </string-array>
+    <!-- 发现模块 -->
+    <string-array name="find_fragment_list_item">
+        <item>10|0|15|4|圈子</item>
+        <item>20|60|15|1|扫一扫</item>
+        <item>0|0|15|2|按一按</item>
+        <item>20|0|15|3|附近名片</item>
+        <item>20|0|15|5|应用</item>
+    </string-array>
+    <!-- 我的网站 -->
+    <string-array name="me_sjwz_list_item">
+        <item>20|0|20|1|企业资料</item>
+        <item>20|15|20|2|微企动态</item>
+        <item>0|15|20|3|微企产品</item>
+        <item>0|0|20|4|微企相册</item>
+        <item>20|15|20|5|微企模版</item>
+        <item>0|0|20|6|微企二维码</item>
+        <item>20|0|20|7|网站访问统计</item>
+    </string-array>
+    <!-- 我的网站 -->
+    <string-array name="manage_main_list_item">
+        <item>10|0|20|1|公告系统</item>
+        <item>20|15|20|2|员工</item>
+        <item>0|0|20|3|黑名单员工</item>
+        <item>20|0|20|4|手机网站</item>
+    </string-array>
+    <!-- 设置名片背景 -->
+
+    <string-array name="name_card_top_bg_item">
+        <item>20|15|20|1|选择一张图片</item>
+        <item>0|15|20|2|图片墙</item>
+        <item>0|0|20|3|视频墙</item>
+    </string-array>
+
+</resources>

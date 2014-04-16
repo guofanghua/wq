@@ -1,0 +1,550 @@
+<resources>
+
+    <string name="string_sjwz">手机网站</string>
+    <string name="string_gl">管理</string>
+    <string name="app_name">微企</string>
+    <string name="string_wq">微企</string>
+    <string name="photo_take">拍照</string>
+    <string name="photo_pick">从相册选择</string>
+    <string name="ablum_qyq">分享生意圈</string>
+    <string name="ablum_save_local">保存照片到相册</string>
+    <string name="add_relationship_people">和谁?</string>
+    <string name="clip_succes_warn">复制成功</string>
+    <string name="send_msg_string" formatted="fasel">这是我的手机网站：\n%s\n快来访问吧</string>
+    <string name="main_string_warn">您已建立手机网站</string>
+    <string name="main_string_warn1">点击这里完善资料吧</string>
+    <string name="log_hint">您今天做了什么？</string>
+
+    <!-- menu -->
+    <string name="menu_xp">动态</string>
+    <string name="menu_mpl">名片录</string>
+    <string name="menu_fx">发现</string>
+    <string name="menu_wo">我</string>
+    <string name="dialog_loading">正在加载,请稍候...</string>
+    <string name="dialog_comitting">正在提交,请稍候...</string>
+    <string name="dialog_version">正在检测，请稍候...</string>
+    <string name="no_data">暂无数据</string>
+    <string name="err_data">获取失败，点击重试</string>
+    <!-- 认证申请 -->
+    <string name="string_wqxx">微企信息</string>
+    <string name="string_auth_hint_name">请输入您的微企名称</string>
+    <string name="string_auth_hint_intro">请输入您的微企简介</string>
+    <string name="string_auth_com_pic">营业执照</string>
+    <string name="string_auth_hint_addr">请输入您的微企地址</string>
+    <string name="string_auth_connect_type">联系方式</string>
+    <string name="string_auth_hint_mobile">请输入您的微企联系方式</string>
+    <string name="string_auth_com_qydb">微企代表</string>
+    <string name="string_auth_hint_frdb">请输入您的微企法人代表姓名</string>
+    <string name="string_auth_btn_commit">提 交 申 请</string>
+    <string name="string_auth_com_name">微企名称</string>
+    <string name="string_auth_com_xz">微企性质</string>
+    <string name="string_auth_com_addr">微企地址</string>
+    <string name="string_auth_com_photo">微企联系电话</string>
+    <string name="string_auth_com_intro">微企简介</string>
+    <string name="string_auth_title">诚信认证申请</string>
+    <string name="string_auth_form_warn_name">请填写单位名称</string>
+    <string name="string_auth_form_warn_xz">请填写单位性质</string>
+    <string name="string_auth_form_warn_addr">请填写单位地址</string>
+    <string name="string_auth_form_warn_mobile">请填写联系电话</string>
+    <string name="string_auth_form_warn_pic">请上传营业执照</string>
+    <string name="string_auth_form_warn_intro">请填写微企简介</string>
+    <string name="string_auth_form_warn_zz">请填写其他资质或获奖情况</string>
+    <string name="string_auth_form_warn_db">请填写法人代表</string>
+    <string name="string_auth_form_warn_read_xy">请阅读认证申请协议</string>
+    <string name="string_auth_readxy">已阅读并同意</string>
+    <string name="string_auth_rzxy">认证申请协议</string>
+    <string name="string_auth_bz">备注:\n
+         1.以上提供信息均正确属实\n
+         2.以上信息将有指定区域代理商前去微企核实认证\n
+         3.以上信息均保密，代理商处持有1份，公司总部持有1份</string>
+
+    <!-- 上下拉刷新 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">努力加载中...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="string_edit">编辑</string>
+    <string name="string_update">更改</string>
+    <string name="string_confirm">确 定</string>
+    <string name="string_tj">提交</string>
+    <string name="string_save">保 存</string>
+    <string name="string_tg">跳 过</string>
+    <string name="string_next_step">下一步</string>
+    <string name="string_into">进入</string>
+    <string name="string_complete">完成</string>
+    <string name="string_new_add">添 加</string>
+    <string name="string_upload">上传</string>
+    <string name="string_del">删除</string>
+    <string name="string_cacel">取消</string>
+    <string name="string_back">返回</string>
+    <string name="string_yl">预览</string>
+    <string name="string_gd">更多</string>
+    <string name="string_mobile_regex">手机格式错误</string>
+    <string name="string_email_regex">邮箱格式错误</string>
+    <string name="string_url_regex">网址格式错误</string>
+    <string name="exit_app_hint">再点一次返回退出程序</string>
+    <string name="exit_auth_hint">再点一次退出当前界面</string>
+    <!-- 用户登录部分 -->
+    <string name="login_edit_user_hint">请输入微企号</string>
+    <string name="login_edit_userkey_hint">请输入密码</string>
+    <string name="login_edit_userkey_hint_1">请再次输入密码</string>
+    <string name="login_btn_login">登 录</string>
+    <string name="register_arrow_warn">您还没有手机网站，戳一下"马"上有空间</string>
+    <string name="login_string_xlwb">新浪微博登录</string>
+    <string name="login_txt_findkey">忘记密码？</string>
+    <string name="login_msg_user">请输入微企号</string>
+    <string name="login_msg_userKey">请输入密码</string>
+    <string name="login_waiting">正在认证,请稍后...</string>
+    <string name="register_rep_pwd_warn">密码不一致</string>
+    <!-- 注册部分 -->
+    <string name="register_string_zc">注  册</string>
+    <string name="register_edit_user_hint">6-20个非中文字符</string>
+    <string name="register_edit_userkey_hint">请输入密码</string>
+    <string name="register_edit_user_zw_warn">微企号不能包含中文</string>
+    <string name="register_edit_user_sz_warn">微企号不能全为数字</string>
+    <string name="register_edit_user_num_count_warn">微企号必须是6-20个非中文字符</string>
+    <string name="register_edit_user_pwd_gf_warn">密码不能为中文</string>
+    <string name="logoin_user_name">微&#160;企&#160;号:</string>
+    <string name="logoin_user_pwd">密&#160;&#160;&#160;&#160;&#160;码:</string>
+    <string name="logoin_user_pwd_confrim">确认密码:</string>
+    <string name="register_name_hint">(6到20位英文或数字组合)</string>
+    <string name="register_pwd_hint">(6到20位字符)</string>
+    <string name="register_pwd_comfirm_hint">请再次填入密码</string>
+    <!-- 瀑布 流 -->
+
+    <string name="border_top">Border Top</string>
+    <string name="border_bottom">Border Bottom</string>
+    <string name="image_url">Image Url</string>
+    <!-- 提示语言 -->
+    <string name="string_hint_no_str">未填写</string>
+    <string name="string_limt_warm">字数不能超过%d</string>
+    <!-- http提示语 -->
+    <string name="string_http_err_data">解析数据异常</string>
+    <string name="sys_network_no_available">网络不可用，请稍后重试</string>
+    <string name="sys_network_no_available1">网络不可用，请检查您的网络</string>
+    <string name="sys_network_time_out">访问服务器超时，请稍后重试</string>
+    <string name="string_http_err_failure">访问失败,请稍后重试</string>
+    <string name="string_no_data_txt_rep">获取数据失败，请刷新重试</string>
+    <string name="string_no_data_txt_add" formatted="false">%s暂无数据</string>
+    <string name="string_no_data_btn_add">立 即 添 加</string>
+    <string name="string_no_data_btn_rep">点 击 重 试</string>
+    <!-- customdialog -->
+    <string name="string_back_warn">是否退出当前界面?</string>
+    <string name="string_dialog_update">更新</string>
+    <string name="string_dialog_quit">退出</string>
+    <string name="string_dialog_yes">是</string>
+    <string name="string_dialog_no">否</string>
+    <string name="string_dialog_qd">确定</string>
+    <string name="string_ewm_title">二维码扫描</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="string_register_tj">输入企业名称</string>
+    <!-- 注册搜索公司提示 -->
+    <string name="register_com_edit_hint">输入您的公司名称，寻找公司的小伙伴</string>
+    <string name="register_com_gz">关注</string>
+    <string name="register_com_ygz">已关注</string>
+    <string name="register_com_edit_warn">请输入您的公司名称</string>
+    <!-- 关系日志 -->
+    <string name="card_relation_list_title">名片关系日志</string>
+    <string name="register_com_search_explan">个人推荐</string>
+    <string name="string_wzdl">我知道了</string>
+    <string name="string_wszl">去完善资料</string>
+    <string name="string_regi_dialog_title">欢迎来到微企!</string>
+    <string name="string_regi_dialog_content">您的手机网站已建立，您的手机名片已生成，点击右上角完善资料信息\n您可以点击“名片录“右上角添加关注新名片</string>
+    <string name="string_webview_dialog_content">您的手机网站已建立，您需要去完善‘%s’</string>
+    <string name="string_webview_dialog_mp_content">您的手机名片已建立，您需要去完善‘%s’</string>
+    <string name="string_webview_dialog_grxx">个人信息</string>
+    <!-- 删除的时候 -->
+    <string name="string_wxts">温馨提示</string>
+    <string name="string_del_pic_content">与这张图片同时上传的一组图片都会被删除</string>
+    <string name="string_del_pro_content">确定要删除该产品吗?</string>
+    <!-- 二维码弹出框 -->
+    <string name="dialog_ewm_title1">短信分享</string>
+    <string name="dialog_ewm_title2">保存二维码</string>
+    <string name="ewm_share_wq" formatted="false">我的微企二维码%s</string>
+    <string name="ewm_share_mp" formatted="false">我的名片二维码%s</string>
+
+    <!-- 发现 -->
+
+    <string name="find_string_syq">生意圈</string>
+    <string name="find_string_sys">扫一扫</string>
+    <string name="find_string_pyp">换一换名片</string>
+    <string name="find_string_btn_pyp_title">同时点击此处</string>
+    <string name="find_string_cxrz">微企诚信认证</string>
+    <string name="find_string_lxdl">联系代理</string>
+    <string name="find_string_userCenter">应用中心</string>
+    <string name="find_string_ad_Center">广告传媒中心</string>
+    <string name="find_string_yqa_title">按一按</string>
+    <string name="find_string_go_url">访问空间</string>
+    <string name="find_string_attention">关注</string>
+    <string name="find_string_title_anrency">联系代理</string>
+    <string name="find_string_agency_addr">我们地址</string>
+    <string name="find_string_agency_mobile">客服电话</string>
+    <string name="find_string_agency_url">访问官网</string>
+    <string name="find_string_msg_res">回复</string>
+    <string name="find_string_ec_send">发送</string>
+    <string name="find_string_ec_tip_msg">%s条新评论</string>
+    <string name="find_string_ec_tip_msg_list_title">最新评论</string>
+    <string name="find_string_ec_send_hint">请输入内容</string>
+    <string name="find_string_ec_send_warn">请输入评论内容</string>
+    <string name="find_string_ec_add_titile"></string>
+    <string name="find_string_ec_add_pic_tip">发布图片</string>
+    <string name="find_string_ec_add_content_tip">发布内容</string>
+    <string name="find_string_ec_add_content_warn">请输入发布内容</string>
+    <string name="find_string_ec_zan">赞</string>
+    <string name="find_string_ec_yzan">已赞</string>
+    <string name="find_string_ec_pl">评论</string>
+    <string name="find_string_my_cir">我的生意圈</string>
+    <string name="find_pyp_title">一起摇动手机换名片</string>
+    <string name="find_pyp_title1">或者</string>
+    <string name="find_pyp_again">请再试一次</string>
+    <string name="find_tip_zan_title">赞了一下</string>
+    <string name="find_tip_trade_detail_title">评论详情</string>
+    <string name="find_sys_photo">相册</string>
+    <string name="find_sys_light">闪光</string>
+    <string name="find_ec_send_warn">%s条信息发布失败</string>
+    <string name="find_ec_send_warn_item">发送失败，轻触以再次发送</string>
+    <string name="find_ec_detail_count">共%d张</string>
+    <string name="find_zh_title">展会</string>
+    <string name="find_zs_title">招商</string>
+    <string name="find_pmp_title">拍名片</string>
+
+    <!-- 时间显示问题 -->
+    <string name="find_date_now">刚刚</string>
+    <string name="find_date_yesterday">昨天</string>
+    <string name="find_date_q_yesterday">前天</string>
+    <string name="find_date_pre_day">%s天前</string>
+    <string name="find_date_pre_hour">%s小时前</string>
+    <string name="find_date_pre_minute">%s分钟前</string>
+    <string name="find_cir_share_link_title">分享了一个链接</string>
+    <string name="find_cir_share_pro_title">分享了一个产品</string>
+    <string name="find_cir_share_notice_title">分享了一个动态</string>
+
+    <!-- 询盘 -->
+
+    <string name="visit_title">网站访问统计</string>
+    <string name="visit_main_count_day">今日访问量（次）</string>
+    <string name="visit_main_count_all">手机网站总访问量（次）</string>
+    <string name="visit_main_count_all1">名片总访问量（次）</string>
+    <string name="visit_main_count_week">近一周访问次数</string>
+    <string name="visit_main_count_month">近一月访问次数</string>
+    <string name="visit_main_count_quarter">近一季度访问次数</string>
+    <string name="visit_main_count_year">近一年访问次数</string>
+    <string name="visit_detail_today">%s（今天）</string>
+    <string name="visit_detail_format_count">%s次</string>
+    <string name="cir_add_warn_pic">请上传图片</string>
+    <string name="cir_add_warn_content">请填写发布内容</string>
+
+    <!-- 首页描述 -->
+    <string name="add_title">您的手机网站已建立,请完善信息资料</string>
+    <string name="linq_add_wqxx">完善微企信息</string>
+    <string name="linq_add_wqxc">添加微企相册</string>
+    <string name="linq_add_product">添加微企产品</string>
+    <string name="linq_add_notice">添加微企动态</string>
+    <string name="linq_add_temp">选择空间模版</string>
+    <string name="linq_add_title">完善手机网站</string>
+    <!-- 欢迎界面 的item -->
+    <string name="linq_title_wqkj">我的手机网站</string>
+    <string name="linq_title_wqmp">我的手机名片</string>
+    <string name="linq_title_content">欢迎来到微企!</string>
+
+    <!-- 我 -->
+
+    <string name="me_string_wqh">微企号:</string>
+    <string name="me_string_wqh_format" formatted="false">微企号:%s</string>
+    <string name="me_string_wqxc">微企相册</string>
+    <string name="me_string_ablum_ms">相册组描述</string>
+    <string name="me_string_ablum_ms_warn">请输入相册组描述</string>
+    <string name="me_string_ablum_pic_warn">请选择相册组图片</string>
+    <string name="me_string_ablum_add_title">新增相册组</string>
+    <string name="me_string_ablum_edit_title">编辑相册组</string>
+    <string name="me_string_rep_http_title">失败列表</string>
+    <string name="me_string_myproduce">产品中心</string>
+    <string name="me_string_wqdt">微企动态</string>
+    <string name="me_string_notice_detail_title">动态详情</string>
+    <string name="me_string_wqmb">微企模板</string>
+    <string name="me_string_zpxx">招聘信息</string>
+    <string name="me_string_wdsc">我的收藏</string>
+    <string name="me_string_gzbg">工作报告</string>
+    <string name="me_string_wdcszs">我的诚信证书</string>
+    <string name="me_string_fwsjtj">访问数据统计</string>
+    <string name="me_string_sz">设置</string>
+    <string name="me_string_my_user">我的应用</string>
+    <string name="me_string_my_lw">客户关系日志</string>
+    <string name="me_string_norz">(需要微企认证)</string>
+    <string name="me_string_product">产品中心</string>
+    <string name="me_string_com_icon">头像</string>
+    <string name="me_string_com_name">微企名称</string>
+    <string name="me_string_com_wq_name">微企号</string>
+    <string name="me_string_com_info_title">个人信息</string>
+    <string name="me_string_com_info_intro">微企简介</string>
+    <string name="me_string_com_info_busine">经营范围</string>
+    <string name="me_string_com_info_com_sision">微企愿景</string>
+    <string name="me_string_com_info_con_method">联系方式</string>
+    <string name="me_string_com_info_addr">地址</string>
+    <string name="me_string_com_info_mobile">电话</string>
+    <string name="me_string_com_info_url">网址</string>
+    <string name="me_string_com_info_email">邮箱</string>
+    <string name="me_string_com_info_lx_title">联系人</string>
+    <string name="me_string_com_info_lx_name">姓名</string>
+    <string name="me_string_com_info_lx_zw">职务</string>
+    <string name="me_string_com_info_lx_mobile">手机</string>
+    <string name="me_string_com_info_lx_we_chat">微信</string>
+    <string name="me_string_com_info_lx_gx">个性签名</string>
+    <string name="me_string_xlwbdz">新浪微博地址</string>
+    <string name="me_string_qqkjdz">QQ空间地址</string>
+    <string name="me_string_wqmc_warn">微企名称不可修改</string>
+    <string name="me_string_wqh_warn">微企号不可修改</string>
+    <string name="me_string_wqh_warn1">一旦填写，不可修改</string>
+    <string name="me_string_check_form_wqh_warn">请填写微企名称</string>
+    <string name="me_string_check_form_jjfw_warn">请填写经营范围</string>
+    <string name="me_string_check_form_lx_name_warn">请填写联系人姓名</string>
+    <string name="me_string_check_form_lx_zw_warn">请填写联系人职务</string>
+    <string name="me_string_check_form_lx_mobile_warn">请填写联系人手机</string>
+    <string name="me_string_qy_zl">微企资料</string>
+    <string name="me_string_quit">退 出 登 录</string>
+    <string name="me_string_ty_yy">多语言</string>
+    <string name="me_string_ty_foll_sys">跟随系统</string>
+    <string name="me_string_clear_cache">清理微企缓存</string>
+    <!-- 企业资料 -->
+    <string name="me_string_info_tile">微企资料</string>
+    <string name="me_string_info_intro">微企介绍</string>
+    <string name="me_string_info_jjfw">经营范围</string>
+    <string name="me_string_info_wqyw">微企愿望</string>
+    <string name="me_string_info_con">联系我们</string>
+
+    <!-- 我的 -->
+
+    <string name="me_string_frame_name">我的名片</string>
+        <string name="me_string_szbj">设置背景</string>
+        <string name="me_string_sztpq">设置图片墙</string>
+    <string name="me_string_frame_cir">我的生意圈</string>
+    <string name="me_string_frame_pro">微企产品</string>
+
+    <!-- 动态 -->
+
+    <string name="me_string_add_notice_pic">动态图片</string>
+    <string name="me_string_add_notice_title">新增动态</string>
+    <string name="me_string_add_notice_bt">标题</string>
+    <string name="me_string_add_notice_detail">内容</string>
+    <string name="me_string_edit_notice_title">编辑动态</string>
+    <string name="me_string_notice_pic_warn">请选择图片</string>
+    <string name="me_string_del_notice">删 除 动 态</string>
+    <string name="me_string_qyrz">微企认证</string>
+    <!-- 产品 -->
+    <string name="me_string_add_product_pic">产品图片</string>
+    <string name="me_string_add_product_title">新增产品</string>
+    <string name="me_string_edit_product_title">编辑产品</string>
+    <string name="me_string_product_detail_title">产品详情</string>
+    <string name="me_string_del_product">删 除 产 品</string>
+    <string name="me_string_product_info">产品信息</string>
+    <string name="me_string_product_name">产品名称</string>
+    <string name="me_string_product_price">价格</string>
+    <string name="me_string_product_intro">产品简介</string>
+    <string name="me_string_product_cate">产品分类</string>
+    <string name="me_string_product_count_format">产品数:%s</string>
+    <string name="me_string_product_select_cate">选择产品类型</string>
+    <string name="me_string_pro_list">微企产品</string>
+    <string name="me_string_product_cate_tip">产品分类</string>
+    <string name="me_string_product_select_cate_hint">请选择分类</string>
+    <string name="me_string_product_no_cate">未分类</string>
+    <string name="me_string_product_attr">规格参数</string>
+    <string name="me_string_product_add_attr">添加参数规格</string>
+    <string name="me_string_product_add_cate">新增分类</string>
+    <string name="me_string_product_del_cate">删除分类</string>
+    <string name="me_string_product_price_format">￥%s</string>
+    <string name="me_string_img_max_format">最多只能上传%d张</string>
+    <!-- 二维码 -->
+    <string name="me_string_erweima_title">扫一扫上面的二维码，加我微企号</string>
+    <string name="me_string_name_card_ewm_title">扫一扫二维码，关注我的手机名片</string>
+    <string name="me_string_qyewm">微企二维码</string>
+    <string name="me_string_save_ewm">保存二维码</string>
+    <string name="me_string_del_pro_message" formatted="false">共有产品%s个，是否确定删除此类型？</string>
+    <string name="me_string_pro_add_attr_explan1">将此规格设置为公共规格</string>
+    <string name="me_string_pro_attr_key_explan">例如\"颜色\"、\"尺寸\"等</string>
+    <string name="me_string_pro_attr_value_explan">例如\"红色\"、\"26寸\"等</string>
+    <string name="me_string_pro_pic_form">请上传产品图片</string>
+    <string name="me_string_pro_name_form">请填写产品名称</string>
+    <string name="me_string_pro_intro_from">请填写产品简介</string>
+    <string name="me_string_pro_cate_form">请选择产品分类</string>
+    <string name="me_string_pro_attr_form">请添加产品规格</string>
+    <string name="me_string_pro_attr_title">规格参数名</string>
+    <string name="me_string_pro_cate_str" formatted="false">产品  %s 个</string>
+    <!-- 规格 -->
+    <string name="me_string_pro_attr_key_hint">产品规格名</string>
+    <string name="me_string_pro_attr_value_hint">规格描述</string>
+    <string name="me_string_pro_cate_value_hint">请输入分类名</string>
+    <string name="me_string_pro_attr_del">删 除 此 规 格</string>
+    <string name="me_string_pro_attr_value_isempty">规格描述不能为空</string>
+    <!-- 设置 -->
+    <string name="me_string_set_acount">账户</string>
+    <string name="me_string_set_ys">隐私</string>
+    <string name="me_string_set_ty">通用</string>
+    <string name="me_string_rzfu">认证服务</string>
+    <string name="me_string_set_pwd_pro_hint">未设置</string>
+    <string name="me_string_set_quit_user">注销账户</string>
+    <string name="me_string_set_quit_msg">注销成功</string>
+    <string name="me_string_set_quit_err_msg">注销失败</string>
+    <string name="me_string_set_user_help">联系我们</string>
+    <string name="me_string_set_conn_phone">0755-88888888</string>
+    <string name="me_string_set_about">关于</string>
+    <string name="me_string_set_cache">清空缓存</string>
+    <string name="me_string_set_pwd">修改登录密码</string>
+    <string name="me_string_set_feed_back">反馈意见</string>
+    <string name="me_string_set_about_room">关于微企</string>
+    <string name="me_string_set_cache_success">已清存储空间</string>
+    <string name="me_string_set_version">版本更新</string>
+    <string name="me_string_about_version_title">微企:%s</string>
+    <string name="me_string_about_gnjs">功能介绍</string>
+    <string name="me_string_about_welecome">欢迎界面</string>
+    <string name="me_string_about_bq">微企空间科技有限公司 版权所有\nCopyright@2014-2016 \nAll Rights Reserved.</string>
+    <string name="me_string_set_pwd_email_title">密保邮箱</string>
+    <string name="me_string_set_pwd_email_hint">请输入密保邮箱</string>
+    <string name="me_string_set_pwd_email_warn">密保邮箱</string>
+    <string name="me_string_set_pwd_pro_pwd_title">用户密码</string>
+    <string name="me_string_set_pwd_pro_pwd_hint">输入用户密码</string>
+    <string name="me_string_set_pwd_pro_pwd_warn">用户密码不能为空</string>
+    <string name="me_string_set_pwd_email_empty">请输入密保邮箱</string>
+    <string name="me_string_set_pwd_email_regex">邮箱格式错误</string>
+    <string name="me_string_forget_pwd_title">忘记密码</string>
+    <string name="me_string_forget_pwd_hint">请输入微企号</string>
+    <string name="me_string_forget_pwd_empty">请输入微企号</string>
+    <string name="me_string_forget_pwd_warn">根据您填写的微企号，发送验证码至对应密保邮箱</string>
+    <string name="me_string_set_pwd_title">重置密码</string>
+    <string name="me_string_set_change_pwd_title">修改密码</string>
+    <string name="me_string_set_pwd_jym_title">校验码已发至%s</string>
+    <string name="me_string_set_pwd_old_warn">请填写原登录秘密</string>
+    <string name="me_string_set_pwd_jym_warn">请填写校验码</string>
+    <string name="me_string_set_pwd_pwd_warn">请填写最新密码</string>
+    <string name="me_string_set_pwd_pwd_warn1">输入密码不一致</string>
+    <string name="me_string_set_pwd_jym_hint">请输入校验码</string>
+    <string name="me_string_set_pwd_pwd_title">新密码</string>
+    <string name="me_string_set_pwd_pwd_hint">请输入新密码</string>
+    <string name="me_string_set_old_pwd_pwd_hint">原登录密码</string>
+    <string name="me_string_set_pwd_pwd_two_title">密码确认</string>
+    <string name="me_string_set_pwd_pwd_two_hint">请再次输入新密码</string>
+    <string name="me_string_set_pwd_hqjym">获取校验码</string>
+    <string name="me_string_set_pwd_second">%s秒</string>
+    <string name="me_string_set_pwd_yx">（10分钟内有效）</string>
+    <string name="me_string_info_com_name">公司名称</string>
+    <string name="me_string_change_err_warn">修改密码失败，请确认输入是否正确</string>
+    <string name="me_string_change_right_warn">密码修改成功</string>
+    <string name="me_pro_attr_explan">例如: 价格, 型号, 库存</string>
+
+    <!-- 模板设置 -->
+    <string name="me_template_title">模板详情</string>
+    <string name="me_template_name">模板名称:</string>
+    <string name="me_template_des_name">设计师：</string>
+    <string name="me_template_size">空间大小：</string>
+    <string name="me_template_version">版本：</string>
+    <string name="me_template_user_count">使用人数：</string>
+    <string name="me_template_contruduct">资源简介：</string>
+    <string name="me_template_btn_ok">应用</string>
+    <string name="me_template_warn">次模板正在开发中，暂不可用...</string>
+    <!-- 意见反馈 -->
+    <string name="me_suggest_warn">请填写您宝贵的意见</string>
+    <string name="me_attr_exist_warn">参数已存在</string>
+
+    <!-- 动态 -->
+    <string name="notice_cate_title">选择动态类型</string>
+    <string name="me_string_add_ablum_expland">相册组描述</string>
+    <string name="me_string_del_ablum">删 除 相 册</string>
+    <string name="me_string_http_err_warn">有%d条上传失败</string>
+    <string name="me_string_http_err_pl">批量上传</string>
+    <string name="me_pro_name_warn">企业名称一旦输入，不可修改</string>
+    <string name="me_pro_name_title">企业名称</string>
+    <string name="me_pro_name_edit_warn">请输入企业名称</string>
+    <string name="me_pro_name_edit_hint">输入企业名称</string>
+    <string name="me_name_card_title">我的名片</string>
+    <string name="me_name_card_ewm">名片二维码</string>
+    <string name="me_name_card_telmp_select">名片模板选择</string>
+    <string name="me_name_card_telmp">名片模板</string>
+    <string name="me_name_card_msg" formatted="false">你好，我是%s,名片地址:\n%s</string>
+    <string name="me_name_card_msg1" formatted="false">你好，名片地址:\n%s</string>
+    <string name="me_custom_rela_list_title">客户关系日志</string>
+    <string name="log_edit">写客户关系日志</string>
+    <string name="record_format_str" formatted="false">今天是%d月%d日 %s</string>
+    <string name="mingp_bz">名片备注</string>
+    <string name="mingp_box">名片盒子</string>
+    <string name="me_new_version">当前已是最新版本</string>
+
+    <!-- 名片 -->
+    <string name="me_name_card_temp_title">名片模板</string>
+    <string name="me_name_card_share_title">%s的手机名片</string>
+    <string name="me_name_card_mpzl">名片资料</string>
+    <string name="me_name_card_mpmb">名片模板</string>
+    <string name="me_name_card_mpewm">名片二维码</string>
+    <string name="me_name_card_mpfwtj">名片访问统计</string>
+    <!-- 正则表达式 -->
+    <string name="regex_mobile">手机格式错误</string>
+    <string name="regex_email">邮箱格式错误</string>
+    <string name="regex_url">网址格式错误</string>
+
+    <!-- 伙伴 -->
+
+    <string name="part_string_detail_title">微企名片</string>
+    <string name="part_string_detail_region">地址</string>
+    <string name="part_string_detail_wqh">微企号:%s</string>
+    <string name="part_string_detail_managelx">经营范围</string>
+    <string name="part_string_detail_comproduct">微企产品</string>
+    <string name="part_string_detail_mobile">联系电话</string>
+    <string name="part_string_detail_channel">来源</string>
+    <string name="part_string_detail_btn_collect">收  藏</string>
+    <string name="part_string_search_tittle">搜索</string>
+    <string name="part_string_detail_pho_title">拨打电话</string>
+    <string name="part_string_detail_we_chat_title">进入微信</string>
+    <string name="part_string_gz">关 注</string>
+    <string name="part_string_cancel_gz">取 消 关 注</string>
+    <string name="part_string_new_part">谁关注我</string>
+    <string name="part_string_wdyg">我的员工</string>
+    <string name="part_string_pyp_part">碰一碰</string>
+    <string name="part_string_sys_part">扫一扫</string>
+    <string name="part_string_in_wq_mp">访问手机名片</string>
+    <string name="part_string_in_wq_room">访问手机网站</string>
+    <string name="part_string_detail_btn_add_parent">添 加 好 友</string>
+    <string name="part_string_yqa_title">一起按，加关注</string>
+    <string name="part_string_search_btn_title">搜索</string>
+    <string name="part_string_search_qyh">搜微企号</string>
+    <string name="part_string_search_name">搜微企名称</string>
+    <string name="part_string_search_jylx">搜经营类型</string>
+    <string name="part_string_search_yqa">一起按，加关注</string>
+    <string name="part_string_search_qq">从QQ好友列表添加</string>
+    <string name="part_string_search_sina">从新浪粉丝列表添加</string>
+    <string name="part_string_search_hint">请输入需要查询的%s</string>
+    <string name="part_string_list_ygz">已关注</string>
+    <string name="part_string_list_wgz">未关注</string>
+    <string name="part_string_detail_ygz">（已关注）</string>
+    <string name="part_string_detail_wgz">（未关注）</string>
+    <string name="part_string_detail_pic_count">共%s张图片</string>
+    <!-- 联系人 -->
+    <string name="part_string_detail_lx_name">联系人:</string>
+    <string name="part_string_detail_lx_mobile">手   机:</string>
+    <string name="part_string_detail_lx_zw">职   务:</string>
+    <string name="part_string_detail_lx_we_chat">微信号:</string>
+    <string name="part_string_detail_lx_we_chat_clip_warn">微信号已复制</string>
+    <string name="part_string_list_tip_title">谁关注我</string>
+    <string name="part_string_sjmp">手机名片</string>
+    <string name="part_string_fbmprz">写客户关系日志</string>
+    <string name="part_string_mphz">名片盒子</string>
+    <string name="part_sort_list_wmm">未知名称</string>
+    <string name="me_collect_success_warn">收藏成功</string>
+    <string name="me_collect_err_warn">收藏失败</string>
+    <string name="me_collect_del_success_warn">删除成功</string>
+    <string name="me_collect_del_err_warn">删除失败</string>
+    <string name="me_string_xq">详情</string>
+    <string name="me_string_write">写</string>
+    <string name="me_string_pyr">批阅人</string>
+    <string name="me_string_csr">抄送人</string>
+    <string name="me_string_commit_success_warn">提交成功</string>
+    <string name="me_string_commit_err_warn">提交失败</string>
+    <string name="me_string_wdbg">我的报告</string>
+    <string name="me_string_tjgwd">提交给我的</string>
+    <string name="me_string_csgwd">抄送给我的</string>
+    <string name="me_string_pyjy">批阅建议</string>
+    <string name="me_string_bgxq">报告详情</string>
+    <string name="me_string_work_sp">批阅</string>
+    <string name="me_string_work_sp_success">批阅成功</string>
+    <string name="inq_string_gg">公告</string>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <com.wq.UI.ablumGallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:spacing="10dp" >
+    </com.wq.UI.ablumGallery>
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ccc"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_current_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:lineSpacingMultiplier="1.2"
+            android:padding="5dp"
+            android:text="2"
+            android:textColor="#fff"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</FrameLayout>

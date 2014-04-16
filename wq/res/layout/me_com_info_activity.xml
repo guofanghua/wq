@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 微企简介 -->
+
+            <LinearLayout
+                android:id="@+id/me_info_layout_intro"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:onClick="click"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/me_string_info_intro"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/me_info_txt_intro"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:hint="@string/string_hint_no_str"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="3"
+                        android:onClick="click"
+                        android:paddingRight="5dp"
+                        android:tag="0"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/arrowStyle"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 经营范围 -->
+
+            <LinearLayout
+                android:id="@+id/me_info_layout_jyfw"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:onClick="click"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/me_string_info_jjfw"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/me_info_txt_jyfw"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:hint="@string/string_hint_no_str"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="3"
+                        android:onClick="click"
+                        android:paddingRight="5dp"
+                        android:tag="0"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/arrowStyle"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 企业愿景 -->
+
+            <LinearLayout
+                android:id="@+id/me_info_layout_qyyj"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:onClick="click"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/me_string_info_wqyw"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/me_info_txt_qyyj"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:hint="@string/string_hint_no_str"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="3"
+                        android:onClick="click"
+                        android:paddingRight="5dp"
+                        android:tag="0"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    style="@style/arrowStyle"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:background="#f1eff6" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp"
+                android:visibility="gone" />
+            <!-- 联系我们 -->
+
+            <LinearLayout
+                android:id="@+id/me_info_layout_con"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/item_click_bg"
+                android:onClick="click"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="1"
+                    android:text="@string/me_string_info_con"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    style="@style/arrowStyle"
+                    android:layout_gravity="center_vertical|right" />
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

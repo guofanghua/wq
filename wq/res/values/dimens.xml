@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dip4">4.0dip</dimen>
+    <dimen name="dip6">6.0dip</dimen>
+    <dimen name="dip8">8.0dip</dimen>
+    <dimen name="dip10">10.0dip</dimen>
+    <dimen name="dip16">16.0dip</dimen>
+    <dimen name="dip18">18.0dip</dimen>
+    <dimen name="dip24">24.0dip</dimen>
+    <dimen name="dip28">28.0dip</dimen>
+    <dimen name="dip30">30.0dip</dimen>
+    <dimen name="dip32">32.0dip</dimen>
+    <dimen name="dip36">36.0dip</dimen>
+    <dimen name="dip38">38.0dip</dimen>
+    <dimen name="dip48">48.0dip</dimen>
+</resources>

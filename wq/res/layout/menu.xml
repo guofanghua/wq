@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/navigatition_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp" >
+
+        <FrameLayout
+            android:id="@+id/layout_xp"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bottom_bar_press"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_xp"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tab_xunpan_pressed" />
+
+            <TextView
+                android:id="@+id/txt_inq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="@string/menu_xp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+            <!-- 有更新 -->
+
+            <TextView
+                android:id="@+id/tab1_txt_new"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+            <!-- 数据条数 -->
+
+            <TextView
+                android:id="@+id/tab1_txt_count"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_hb"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_hb"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tab_frd_normal" />
+
+            <TextView
+                android:id="@+id/txt_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="@string/menu_mpl"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <!-- 有更新 -->
+
+            <TextView
+                android:id="@+id/tab2_txt_new"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+            <!-- 数据条数 -->
+
+            <TextView
+                android:id="@+id/tab2_txt_count"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_fx"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_fx"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="7dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tab_find_normal" />
+
+            <TextView
+                android:id="@+id/txt_fx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:text="@string/menu_fx"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <!-- 有更新 -->
+
+            <TextView
+                android:id="@+id/tab3_txt_new"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+            <!-- 数据条数 -->
+
+            <TextView
+                android:id="@+id/tab3_txt_count"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:text="1"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/layout_wo"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_wo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginTop="3dp"
+                android:clickable="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tab_wo_normal" />
+
+            <TextView
+                android:id="@+id/txt_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/menu_wo"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+            <!-- 有更新 -->
+
+            <TextView
+                android:id="@+id/tab4_txt_new"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:visibility="gone" />
+            <!-- 数据条数 -->
+
+            <TextView
+                android:id="@+id/tab4_txt_count"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/tip"
+                android:ellipsize="end"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:paddingTop="2dp"
+                android:textColor="#fff"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <com.wq.UI.horizontalListview.HorizontalVariableListView
+                    android:id="@+id/me_grid_ablum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent" >
+                </com.wq.UI.horizontalListview.HorizontalVariableListView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/spiltline1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_lx"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_add_notice_edit_lx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="选择动态类型"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/spiltline2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+            <!-- 标题 -->
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_detailexplan"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_title"
+                android:layout_width="fill_parent"
+                android:layout_height="45dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_add_notice_edit_bt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:hint="@string/me_string_add_notice_bt"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/spiltline3"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="10dp"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_add_notice_edit_detail"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:focusable="false"
+                    android:hint="@string/me_string_add_notice_detail"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="3"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/spiltline2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

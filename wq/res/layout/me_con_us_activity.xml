@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:id="@+id/me_rela1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <View style="@style/splitLineStyle" />
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 地址 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_addr"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_left"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_addr"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle_invisible" />
+
+                <TextView
+                    android:id="@+id/me_edit_addr"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_left"
+                    android:ellipsize="end"
+                    android:hint="@string/string_hint_no_str"
+                    android:onClick="click"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 电话 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_mobile"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_left"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_mobile"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle_invisible" />
+
+                <TextView
+                    android:id="@+id/me_edit_mobile"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_left"
+                    android:hint="@string/string_hint_no_str"
+                    android:onClick="click"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 网址 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_url"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="click"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_left"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_url"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle_invisible" />
+
+                <TextView
+                    android:id="@+id/me_edit_url"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_left"
+                    android:hint="@string/string_hint_no_str"
+                    android:onClick="click"
+                    android:paddingRight="5dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 邮箱 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_email"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:onClick="click" >
+
+                <TextView
+                    android:id="@+id/txt_left"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_string_com_info_email"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle_invisible" />
+
+                <TextView
+                    android:id="@+id/me_edit_email"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/txt_left"
+                    android:ellipsize="end"
+                    android:hint="@string/string_hint_no_str"
+                    android:onClick="click"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <com.wq.UI.myScrollView
+        android:id="@+id/scroll_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f1eff6" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/frame_img"
+                android:layout_width="fill_parent"
+                android:layout_height="160dp" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/tabpager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center" >
+                </android.support.v4.view.ViewPager>
+                <!-- android:alpha="0.5" -->
+
+                <LinearLayout
+                    android:id="@+id/layout_index"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:background="#000"
+                    android:gravity="right|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <!-- android:alpha="1" -->
+
+                    <TextView
+                        android:id="@+id/txt_index"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_marginRight="30dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#fff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/show_notice_detail_txt_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:minHeight="35dp"
+            
+                android:textColor="#e2895c"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/show_notice_detail_txt_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="3dp"
+                android:padding="5dp"
+        
+                android:textColor="#000"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </com.wq.UI.myScrollView>
+
+</LinearLayout>

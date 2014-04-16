@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <LinearLayout
+        android:id="@+id/me_rela1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f1eff6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/me_rela1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/me_rela1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f1eff6"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/icon" />
+
+                <TextView
+                    android:id="@+id/txt_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <com.wq.UI.InScrolllistView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:listSelector="@android:color/transparent" >
+            </com.wq.UI.InScrolllistView>
+        </LinearLayout>
+
+        <!-- 信息 -->
+
+        <TextView
+            android:id="@+id/about_txt_bq"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|bottom"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/me_string_about_bq"
+            android:textColor="#aaa" />
+    </LinearLayout>
+
+</LinearLayout>

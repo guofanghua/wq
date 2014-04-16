@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <EditText
+        android:id="@+id/et_bz"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginBottom="@dimen/dip16"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="@dimen/dip16"
+        android:background="@drawable/ed_bg"
+        android:hint="备注"
+        android:paddingLeft="10dip" />
+
+    <ImageView
+        android:id="@+id/img_mp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ed_bg"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY" />
+
+</LinearLayout>

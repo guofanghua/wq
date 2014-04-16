@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+    <!-- 搜索输入框 -->
+
+    <ScrollView
+        android:id="@+id/add_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <!-- 时间 -->
+
+            <TextView
+                android:id="@+id/me_txt_title_info"
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <LinearLayout
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="0dp" >
+
+                <ImageView
+                    android:id="@+id/img_tj_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_tj_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txt_tj_ocp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/txt_type"
+                            android:layout_width="wrap_content"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/txt_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:textColor="#000"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/txt_status"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center_vertical"
+                            android:textColor="#f00"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <!-- 今日报告 -->
+
+            <TextView
+                android:id="@+id/me_txt_title2"
+                style="@style/tipStyle"
+                android:layout_width="fill_parent" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/rela_now_work"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_now_title_work"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2"
+                        android:tag="-1"
+                       
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_now_work"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|left"
+                        android:minHeight="50dp"
+                        android:paddingBottom="5dp"
+                        android:tag="-1"
+                       android:textColor="#999"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="15dp" />
+
+            <!-- 明日计划 -->
+
+            <RelativeLayout
+                android:id="@+id/rela_next_work"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_next_title_work"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2"
+                        android:tag="-1"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_next_work"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="top|left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:minHeight="50dp"
+                        android:paddingBottom="5dp"
+                        android:tag="-1"
+                       android:textColor="#999"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 批阅人 -->
+
+            <RelativeLayout
+                android:id="@+id/rela_pyr"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_pyr_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:tag="-1"
+                        android:text="@string/me_string_pyr"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:textColor="#999"
+                        android:gravity="center_vertical|left"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_ocp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:paddingRight="10dp"
+                        android:textColor="#999"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/img_pyr"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical|right" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 批阅建议 -->
+
+            <RelativeLayout
+                android:id="@+id/rela_py_suggest"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <View
+                    style="@style/splitLineStyle"
+                    android:layout_marginLeft="0dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_py_suggest_title"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2"
+                        android:tag="-1"
+                        android:text="@string/me_string_pyjy"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/txt_py_suggest"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="top|left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:minHeight="50dp"
+                        android:paddingBottom="5dp"
+                        android:tag="-1"
+                        android:textColor="#999"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <!-- 抄送人 -->
+
+            <RelativeLayout
+                android:id="@+id/rela_csr"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="50dp" >
+
+                <View
+                    style="@style/splitLineStyle"
+                    android:layout_marginLeft="0dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="20dp"
+                    android:minHeight="50dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txt_csr_title"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical|left"
+                        android:tag="-1"
+                        android:text="@string/me_string_csr"
+                        android:textColor="#000"
+                        android:textColorHint="#000"
+                        android:textSize="15sp" />
+
+                    <com.custom.vg.list.CustomListView
+                        android:id="@+id/grid_container"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:clickable="false"
+                        android:gravity="right"
+                        android:listSelector="@android:color/transparent"
+                        android:numColumns="auto_fit" >
+                    </com.custom.vg.list.CustomListView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

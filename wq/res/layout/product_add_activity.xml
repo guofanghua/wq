@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:id="@+id/add_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/layout_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f1eff6"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_title1"
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <LinearLayout
+                android:id="@+id/layout_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="90dp"
+                android:orientation="horizontal" >
+
+                <com.wq.UI.XgridView
+                    android:id="@+id/me_grid_product_ablum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3"
+                    android:verticalSpacing="5dp" >
+                </com.wq.UI.XgridView>
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <!-- 产品名称 -->
+
+            <TextView
+                android:id="@+id/me_txt_title_info"
+                style="@style/tipStyle"
+                android:layout_width="fill_parent" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/me_rela_cate"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/edit_pro_cate"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/me_string_product_select_cate_hint"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:tag="-1"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <!-- 产品类别 -->
+
+            <TextView
+                android:id="@+id/me_txt_title2"
+                style="@style/tipStyle"
+                android:layout_width="fill_parent" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/me_rela_pro_name"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/edit_pro_name"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/me_string_product_name"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:tag="-1"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 产品简介 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_intro"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/edit_pro_intro"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="60dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/me_string_product_intro"
+                    android:lineSpacingMultiplier="1.2"
+                    android:maxLines="2"
+                    android:padding="5dp"
+                    android:tag="-1"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <!-- 选择的类别 -->
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <!-- 产品属性 -->
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/me_rela_add_attr"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="55dp" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|left"
+                        android:layout_marginLeft="10dp"
+                        android:text="@string/me_string_product_attr"
+                        android:textColor="#000"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_attr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View style="@style/splitLineStyle" />
+
+                <com.wq.UI.InScrolllistView
+                    android:id="@+id/pro_attr_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="0px"
+                    android:listSelector="@null" >
+                </com.wq.UI.InScrolllistView>
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 删除产品 -->
+
+            <Button
+                android:id="@+id/pro_btn_del"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_del_click"
+                android:text="@string/me_string_del_product"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

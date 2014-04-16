@@ -1,0 +1,620 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.endure.wq"
+    android:versionCode="4"
+    android:versionName="1.4" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SET_ANIMATION_SCALE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.flash" />
+    <!-- 百度定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="com.wq.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.wq.WelecomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 百度定位的服務 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.wq.mainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.BaseActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.UI.ClipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.UI.ClipActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.UI.ClipActivity2"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.UI.ClipActivity3"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 浏览webview -->
+        <activity
+            android:name="com.wq.webviewShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 登录 -->
+        <activity
+            android:name="com.wq.loginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 注册 -->
+        <activity
+            android:name="com.wq.registerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 我 -->
+        <!-- 建站流程 -->
+        <activity
+            android:name="com.wq.inquiry.jzActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 我的收藏 -->
+        <activity
+            android:name="com.wq.me.collectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 我的空间 -->
+        <activity
+            android:name="com.wq.me.me_space_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业信息 -->
+        <activity
+            android:name="com.wq.me.companyDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产品 -->
+        <activity
+            android:name="com.wq.me.productMainListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业相册 -->
+        <activity
+            android:name="com.wq.me.ablumMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 相册上传界面失败 -->
+        <activity
+            android:name="com.wq.me.ablumRepAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 添加企业相册 -->
+        <activity
+            android:name="com.wq.me.ablumAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 动态优惠 -->
+        <activity
+            android:name="com.wq.me.noticeMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 动态上传失败 -->
+        <activity
+            android:name="com.wq.me.noticeRepAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 浏览动态优惠列表 -->
+        <activity
+            android:name="com.wq.me.showNoticeListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 浏览动态优惠详情 -->
+        <activity
+            android:name="com.wq.me.showNoticeDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 添加动态 -->
+        <activity
+            android:name="com.wq.me.noticeAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 添加动态类型 -->
+        <activity
+            android:name="com.wq.me.noticeCateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 查看产品详情 -->
+        <activity
+            android:name="com.wq.me.productShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 添加产品 -->
+        <activity
+            android:name="com.wq.me.productAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 添加产品属性 -->
+        <activity
+            android:name="com.wq.me.proAttrAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产品失败列表 -->
+        <activity
+            android:name="com.wq.me.productRepAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 编辑属性 -->
+        <activity
+            android:name="com.wq.me.proAttrEditActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 选择分类 -->
+        <activity
+            android:name="com.wq.me.proCateListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.proCateAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产看企业二维码 -->
+        <activity
+            android:name="com.wq.me.erweimaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.find.captureOtherShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 获取模板 -->
+        <activity
+            android:name="com.wq.me.templateListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产看模板详情 -->
+        <activity
+            android:name="com.wq.me.templateDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产看模板图片详情 -->
+        <activity
+            android:name="com.wq.me.templateImageShowActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 发现 -->
+        <!-- 碰一碰详情 -->
+        <activity
+            android:name="com.wq.find.find_pyp_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 生意圈 -->
+        <activity
+            android:name="com.wq.find.findEpCircleListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.find.findUseCenterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 产看企业生意圈详情 -->
+        <activity
+            android:name="com.wq.find.findEpCircleDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 产看企业生意圈详情 -->
+        <activity
+            android:name="com.wq.find.findEpCircleDetailActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业圈发布失败列表 -->
+        <activity
+            android:name="com.wq.find.circleRepAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 查看生意圈最新评论 列表 -->
+        <activity
+            android:name="com.wq.find.findTipListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 查看生意圈最新评论详情 -->
+        <activity
+            android:name="com.wq.find.findTipDetailAcitivy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 添加生意圈 -->
+        <activity
+            android:name="com.wq.find.findAddCircleActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 联系代理 -->
+        <activity
+            android:name="com.wq.find.find_conAngencyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 扫描二维码 -->
+        <activity
+            android:name="com.wq.find.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 设置 -->
+        <activity
+            android:name="com.wq.me.settingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 隐私 -->
+        <activity
+            android:name="com.wq.me.settingYsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 隐私 -->
+        <activity
+            android:name="com.wq.me.settingTYActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 询盘 -->
+        <!-- 访问统计主界面 -->
+        <activity
+            android:name="com.wq.me.visitMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 访问统计详情页 -->
+        <activity
+            android:name="com.wq.me.visitDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 伙伴 -->
+        <!-- 最新伙伴 -->
+        <activity
+            android:name="com.wq.partner.part_tipActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- webview企业流程 -->
+        <activity
+            android:name="com.wq.partner.part_webview_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 一起按 -->
+        <activity
+            android:name="com.wq.partner.part_yqaActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 搜索伙伴方式列表页 -->
+        <activity
+            android:name="com.wq.partner.part_searchActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 搜索伙伴详情页 -->
+        <activity
+            android:name="com.wq.partner.part_searchDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.wq.partner.part_DetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 输入界面 -->
+        <activity
+            android:name="com.wq.editActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- 相册浏览 -->
+        <activity
+            android:name="com.wq.ablumActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 相册浏览 -->
+        <activity
+            android:name="com.wq.ablumActivity1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 图片 -->
+        <activity
+            android:name="com.wq.clip.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业认证 申请 -->
+        <activity
+            android:name="com.wq.authApplyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 企业资料 -->
+        <activity
+            android:name="com.wq.me.meComInfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 意见反馈 -->
+        <activity
+            android:name="com.wq.me.ideaBackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 关于我们 -->
+        <activity
+            android:name="com.wq.me.about_us_Activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 联系我们 -->
+        <activity
+            android:name="com.wq.me.meConUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- 查看logo图 -->
+        <activity
+            android:name="com.wq.showLogoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+        </activity>
+        <!-- 相册浏览 -->
+        <activity
+            android:name="com.wq.localAblumScan.ablum_main_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 相片选择 -->
+        <activity
+            android:name="com.wq.localAblumScan.ablum_detail_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.wq.me.setChangePwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <!-- 修改密保的密码 -->
+        <activity
+            android:name="com.wq.me.setPwdProtectPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 设置密保 -->
+        <activity
+            android:name="com.wq.me.setPwdProtectActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 忘记密码 -->
+
+        <activity
+            android:name="com.wq.me.forgetPwdActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 提交企业名称 -->
+        <activity
+            android:name="com.wq.me.meProNameActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 名片二维码 -->
+
+        <activity
+            android:name="com.wq.me.nameCardEWMActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 我的名片 -->
+        <activity
+            android:name="com.wq.me.me_name_card_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 名片模板 -->
+        <activity
+            android:name="com.wq.me.nameCardplateListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 展会 -->
+        <activity
+            android:name="com.wq.find.findZHActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 招商 -->
+        <activity
+            android:name="com.wq.find.findZSActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 动态浏览 -->
+        <activity
+            android:name="com.wq.me.noticeShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 推荐 -->
+
+        <activity
+            android:name="com.wq.register_searchComActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+
+        <!-- 来往列表 -->
+        <activity
+            android:name="com.wq.me.card_relation_list_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+
+        <!-- 关系日志记录 -->
+        <activity
+            android:name="com.wq.me.recodeRelationLog"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <!-- 选择名片录人 -->
+
+        <activity
+            android:name="com.wq.me.card_relation_select_people_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.Edit_mingPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.MingPListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.proArrListAcvitiy"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.name_card_main_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 显示图片 -->
+
+        <activity
+            android:name="com.wq.PicCheck.PicCheckMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.PicCheck.PicCheckDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 添加文字 -->
+        <activity
+            android:name="com.wq.me.MeCollectWZActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" >
+        </activity>
+        <!-- 显示添加 -->
+        <activity
+            android:name="com.wq.me.MeCollectShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 工作报告列表 -->
+        <activity
+            android:name="com.wq.me.WorkRepListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 添加工作报告 -->
+        <activity
+            android:name="com.wq.me.WorkRepAddActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 批阅工作报告 -->
+        <activity
+            android:name="com.wq.me.workRepDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <!-- 认证服务 -->
+        <activity
+            android:name="com.wq.me.rzfuShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.mewebviewShowActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.NameCardTopBgActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.NameCardQiangActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="com.wq.me.staffManageActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+    <activity
+            android:name="com.wq.me.manage_main_activity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <service android:name="com.wq.service.deyService" >
+            <intent-filter>
+                <action android:name="com.dey.service" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

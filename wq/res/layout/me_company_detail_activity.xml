@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:id="@+id/me_rela1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <LinearLayout
+                android:id="@+id/me_rela_tx"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/item_click_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_txt_company_wqh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="15dp"
+                    android:maxLines="1"
+                    android:text="@string/me_string_com_icon"
+                    android:textSize="17sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/me_img_logo"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add_prompt"
+                    android:tag="0" />
+            </LinearLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 微企名 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_wqm"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/txt_name_explan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_string_com_wq_name"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/txt_com_wq_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_name_explan"
+                    android:tag="0"
+                    android:textColor="#a1a6a0"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 公司名称 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_com_name"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp" >
+
+                <TextView
+                    android:id="@+id/txt_name_explan"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_string_info_com_name"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/txt_com_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@+id/txt_name_explan"
+                    android:ellipsize="end"
+                    android:textColor="#a1a6a0"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/img_com_name"
+                    style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 联系人 -->
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 姓名 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_name"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_lx_name"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_name"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_lx_name"
+                    android:layout_alignBottom="@+id/txt_lx_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/txt_lx_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:tag="0" />
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 职务 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_zw"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_zw"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_lx_zw"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_zw"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 手机 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_mobile"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_mobile"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_lx_mobile"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_mobile"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_lx_mobile"
+                    android:layout_alignBottom="@+id/txt_lx_mobile"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/txt_lx_mobile"
+                    android:singleLine="true"
+                    android:tag="0" />
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 联系人 -->
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 电话 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_photo"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_name"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_mobile"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle_invisible" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_photo"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_lx_name"
+                    android:layout_alignBottom="@+id/txt_lx_name"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/txt_lx_name"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:tag="0" />
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 邮箱 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_email"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_zw"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_email"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_email"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+
+            <!-- 地址 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_addr"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="0dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="*"
+                    android:textColor="#f00"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txt_lx_mobile"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/me_string_com_info_addr"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_addr"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_alignBaseline="@+id/txt_lx_mobile"
+                    android:layout_alignBottom="@+id/txt_lx_mobile"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_toRightOf="@+id/txt_lx_mobile"
+                    android:singleLine="true"
+                    android:tag="0" />
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 联系人 -->
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 微信 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_lx_we_chat"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_lx_we_chat"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/me_string_com_info_lx_we_chat"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_edit_lx_we_chat"
+                    style="@style/itemEidtStyle_no_arrow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:ellipsize="end"
+                    android:paddingBottom="3dp"
+                    android:paddingTop="3dp"
+                    android:singleLine="true"
+                    android:tag="0" />
+
+                <ImageView style="@style/arrowStyle" />
+            </RelativeLayout>
+
+            <View style="@style/splitLineStyle" />
+            <!-- 个性签名 -->
+
+            <LinearLayout
+                android:id="@+id/me_rela_lx_gx"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/me_string_com_info_lx_gx"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/me_edit_lx_gx"
+                        style="@style/itemEidtStyle_no_arrow"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:ellipsize="end"
+                        android:gravity="left"
+                        android:lineSpacingMultiplier="1.2"
+                        android:maxLines="2"
+                        android:tag="0" />
+                </LinearLayout>
+
+                <ImageView style="@style/layout_arrowStyle" />
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

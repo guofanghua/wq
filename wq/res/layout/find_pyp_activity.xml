@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#111"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/rela_top"
+        layout="@layout/top" />
+    <!-- 动画图片 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/ewm_repeat_bg" >
+
+        <!-- 如果有结果 -->
+
+        <RelativeLayout
+            android:id="@+id/rela_pyp_result"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/pyp_item_bg_click"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/result_img"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/result_txt_wqh"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/result_img"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:lines="1"
+                android:text="苏宁电器"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_txt_intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/result_txt_wqh"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="35dp"
+                android:layout_toRightOf="@+id/result_img"
+                android:ellipsize="end"
+                android:gravity="center_vertical|left"
+                android:lineSpacingMultiplier="1.5"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                style="@style/arrowStyle" />
+        </RelativeLayout>
+
+        <!-- 动画后显示的背景 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="-50dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/shakeImgLeft"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/img_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pyp_iphone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shakeImgRight"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/img_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/pyp_iphone" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 点击碰碰 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="350dp"
+            android:text="@string/find_pyp_title"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="380dp"
+            android:text="@string/find_pyp_title1"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_pyp"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="410dp"
+            android:background="@drawable/btn_style_white"
+            android:gravity="center"
+            android:text="@string/find_string_btn_pyp_title"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shake_report_dragger_up" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f9f9f9"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/shake_line_up" />
+
+            <ListView
+                android:id="@+id/list_result"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                  android:cacheColorHint="@android:color/transparent"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+        <!-- 显示的内容 -->
+
+    </SlidingDrawer>
+
+</RelativeLayout>

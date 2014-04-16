@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:id="@+id/find_rela1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f1eff6" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <TextView
+                style="@style/tipStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 搜微企号 -->
+
+            <LinearLayout
+                android:id="@+id/part_rela_qyh"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/search_qyh_logo" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_qyh"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+
+                    <View
+                        style="@style/splitLineStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 搜企业名称 -->
+
+            <LinearLayout
+                android:id="@+id/part_rela_name"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/search_name" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_name"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+
+                    <View
+                        style="@style/splitLineStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 搜经营类型 -->
+
+            <LinearLayout
+                android:id="@+id/part_rela_jylx"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/search_jyclass_logo" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_jylx"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:visibility="gone"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                style="@style/tipStyle"
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="25dp" />
+
+            <View
+                android:visibility="gone"
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 搜经营类型 -->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/part_rela_yqa"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/yqa_logo" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_yqa"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:visibility="gone"
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+            <!-- 从qq好友列表里面添加 -->
+
+            <LinearLayout
+                android:id="@+id/part_rela_qq"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/find_cxrz" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_qq"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+
+                    <View
+                        style="@style/splitLineStyle"
+                        android:layout_width="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="0dp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- 从新浪微博粉丝列表添加 -->
+
+            <LinearLayout
+                android:id="@+id/part_rela_sina"
+                style="@style/relaStyleFra"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/find_lxdl" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/part_string_search_sina"
+                        android:textSize="17sp" />
+
+                    <ImageView style="@style/arrowStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

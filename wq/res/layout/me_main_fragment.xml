@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff6"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/me_rela1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="20dp" />
+
+            <RelativeLayout
+                android:id="@+id/me_rela2"
+                android:layout_width="fill_parent"
+                android:layout_height="90dp"
+                android:background="@drawable/item_click_bg"
+                android:onClick="onMyclick" >
+
+                <FrameLayout
+                    android:id="@+id/frage_layout"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/me_img_logo"
+                        android:layout_width="65dp"
+                        android:layout_height="65dp"
+                        android:background="@drawable/add_prompt"
+                        android:scaleType="fitXY" />
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/img_arrow"
+                    style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/me_txt_company_wqhexplan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/img_arrow"
+                    android:layout_toRightOf="@+id/frage_layout"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_txt_company_wqh"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/me_txt_company_wqhexplan"
+                    android:layout_alignBottom="@+id/me_txt_company_wqhexplan"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/me_txt_company_wqhexplan"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/me_txt_company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/img_arrow"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/frage_layout"
+                    android:maxLines="1"
+                    android:textColor="#000"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp" />
+
+            <com.wq.UI.InScrolllistView
+                android:id="@+id/listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:listSelector="@android:color/transparent" >
+            </com.wq.UI.InScrolllistView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

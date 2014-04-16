@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:minHeight="90dp"
+                android:orientation="horizontal" >
+
+                <com.wq.UI.XgridView
+                    android:id="@+id/me_grid_ablum"
+                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:verticalSpacing="5dp"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:gravity="center"
+                    android:listSelector="@android:color/transparent"
+                    android:numColumns="3" >
+                </com.wq.UI.XgridView>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/spiltline1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/me_add_notice_txt_title2"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline1"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_lx"
+                android:layout_width="fill_parent"
+                android:layout_height="85dp"
+                android:background="#fff"
+                android:onClick="click"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_add_ablum_edit_ms"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="@string/me_string_ablum_ms"
+                    android:onClick="click"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    style="@style/arrowStyle"
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- 标题 -->
+
+            <View
+                android:id="@+id/spiltline4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <!-- 删除产品 -->
+
+            <Button
+                android:id="@+id/ablum_btn_del"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_del_click"
+                android:text="@string/me_string_del_notice"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeef1"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- logo -->
+
+            <ImageView
+                android:id="@+id/img_logo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/no_data_img" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/string_sjwz"
+                android:textColor="#4b89c2"
+                android:textSize="18sp" />
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="40dp" />
+            <!-- 我们地址 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_address"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/find_string_agency_addr"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    style="@style/itemEidtStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:padding="5dp"
+                    android:tag="0"
+                    android:text="asdfadfadfadfadsfas" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="10dp" />
+
+            <!-- 联系我们 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_mobile"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/find_string_agency_mobile"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/txt_mobile"
+                    style="@style/itemEidtStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:padding="5dp"
+                    android:tag="0"
+                    android:text="asdfafasdfasdfasdfadfafadfasdaadsfadfadadfadfadfadfadfadfdsfadfafdadfadffadfadsfadfadfadfadsfas" />
+            </RelativeLayout>
+
+            <View
+                style="@style/splitLineStyle"
+                android:layout_marginLeft="10dp" />
+
+            <!-- 访问官网 -->
+
+            <RelativeLayout
+                android:id="@+id/me_rela_url"
+                style="@style/relaStyle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="12dp"
+                    android:text="@string/find_string_agency_url"
+                    android:textSize="17sp" />
+
+                <ImageView style="@style/arrowStyle" />
+
+                <TextView
+                    android:id="@+id/txt_url"
+                    style="@style/itemEidtStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:padding="5dp"
+                    android:tag="0"
+                    android:text="asdffas" />
+            </RelativeLayout>
+             <View
+                style="@style/splitLineStyle"
+                 />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

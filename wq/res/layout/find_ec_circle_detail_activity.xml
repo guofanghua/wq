@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <include layout="@layout/no_data" />
+
+    <FrameLayout
+        android:id="@+id/frame_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff" >
+
+        <com.wq.UI.XListView
+            android:id="@+id/list_main"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent" >
+        </com.wq.UI.XListView>
+        <!-- 底部输入留言部分 -->
+
+        <LinearLayout
+            android:id="@+id/ec_circle_layout_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/cir_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:tag="0"
+            android:visibility="gone" >
+
+            <EditText
+                android:id="@+id/ec_circle_edt_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/cir_edittext_bg"
+                android:hint="@string/find_string_ec_send_hint"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/ec_circle_btn_msg"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_cir_click"
+                android:text="@string/find_string_ec_send"
+                android:textColor="#000" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

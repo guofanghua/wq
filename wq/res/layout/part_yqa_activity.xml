@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#111" >
+
+    <include
+        android:id="@+id/rela_top"
+        layout="@layout/top" />
+    <!-- 动画图片 -->
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/yqa_bg" >
+
+        <!-- 结果列表 -->
+
+        <ListView
+            android:id="@+id/list_result"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="240dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:listSelector="@android:color/transparent" >
+        </ListView>
+        <!-- 如果有结果 -->
+
+        <RelativeLayout
+            android:id="@+id/rela_pyp_result"
+            android:layout_width="fill_parent"
+            android:layout_height="70dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ec_tip_bg"
+            android:visibility="gone" >
+
+            <ImageView
+                 android:contentDescription="@string/app_name"
+                android:id="@+id/result_img"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/result_txt_wqh"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/result_img"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="#000"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/result_txt_intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/result_txt_wqh"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="45dp"
+                android:layout_toRightOf="@+id/result_img"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lineSpacingMultiplier="1.5"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/img_arrow"
+                 android:contentDescription="@string/app_name"
+                style="@style/arrowStyle" />
+        </RelativeLayout>
+
+        <!-- 点击碰碰 -->
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="120dp"
+            android:background="@android:color/transparent" >
+
+            <ImageView
+                android:id="@+id/img_anim"
+                android:layout_width="500dp"
+                android:layout_height="500dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:background="@drawable/yqa_anim_bg"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_aya"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/btn_yqa_click"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shake_report_dragger_up" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical" >
+
+            <ImageView
+                 android:contentDescription="@string/app_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/shake_line_up" />
+
+            <ListView
+                android:id="@+id/list_result_history"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="#ccc"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent" >
+            </ListView>
+        </LinearLayout>
+        <!-- 显示的内容 -->
+
+    </SlidingDrawer>
+
+</RelativeLayout>

@@ -1,0 +1,460 @@
+# view res/layout/product_show_activity.xml #generated:28
+# view res/layout/show_notice_detail_activity.xml #generated:25
+# view res/layout/template_detail_activity.xml #generated:15
+# view res/layout/work_rep_list_activity.xml #generated:74
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class com.baidu.location.f { <init>(...); }
+
+# view res/layout/find_ep_circle_list_item.xml #generated:242
+# view res/layout/find_ep_tip_detail_activity.xml #generated:194
+# view res/layout/me_recode_relationship_log.xml #generated:48
+# view res/layout/work_rep_add_activity.xml #generated:275
+# view res/layout/work_rep_detail_activity.xml #generated:379
+-keep class com.custom.vg.list.CustomListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class com.wq.BaseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:41
+-keep class com.wq.BaseApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:547
+-keep class com.wq.PicCheck.PicCheckDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:542
+-keep class com.wq.PicCheck.PicCheckMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.wq.UI.ClipActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.wq.UI.ClipActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.wq.UI.ClipActivity2 { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.wq.UI.ClipActivity3 { <init>(...); }
+
+# view res/layout/photo_crop_activity.xml #generated:16
+# view res/layout/photo_crop_activity1.xml #generated:17
+-keep class com.wq.UI.ClipView { <init>(...); }
+
+# view res/layout/photo_crop_activity2.xml #generated:17
+-keep class com.wq.UI.ClipView1 { <init>(...); }
+
+# view res/layout/main_activity.xml #generated:20
+-keep class com.wq.UI.CustomViewPager { <init>(...); }
+
+# view res/layout/show_logo_activity.xml #generated:10
+-keep class com.wq.UI.DragImageView { <init>(...); }
+
+# view res/layout/about_us_activity.xml #generated:51
+# view res/layout/find_ep_tip_detail_activity.xml #generated:211
+# view res/layout/find_main_fragment.xml #generated:23
+# view res/layout/manage_main_activity.xml #generated:21
+# view res/layout/me_main_fragment.xml #generated:93
+# view res/layout/me_space_activity.xml #generated:21
+# view res/layout/name_card_main_activity.xml #generated:77
+# view res/layout/name_card_top_bg_activity.xml #generated:21
+# view res/layout/pro_attr_list_activity.xml #generated:23
+# view res/layout/pro_cate_list_activity.xml #generated:32
+# view res/layout/product_add_activity.xml #generated:216
+# view res/layout/product_show_activity.xml #generated:230
+# view res/layout/setting_activity.xml #generated:22
+# view res/layout/setting_ty_activity.xml #generated:23
+# view res/layout/setting_ys_activity.xml #generated:24
+# view res/layout/visit_detail_activity.xml #generated:48
+-keep class com.wq.UI.InScrolllistView { <init>(...); }
+
+# view res/layout/photo_activity.xml #generated:12
+-keep class com.wq.UI.StaggeredGridView { <init>(...); }
+
+# view res/layout/me_collect_activity.xml #generated:12
+-keep class com.wq.UI.SwipeListView { <init>(...); }
+
+# view res/layout/ablum_list_activity.xml #generated:12
+# view res/layout/card_relation_list_activity.xml #generated:12
+# view res/layout/find_ec_circle_detail_activity1.xml #generated:15
+# view res/layout/notice_list_activity.xml #generated:12
+# view res/layout/product_main_activity.xml #generated:11
+-keep class com.wq.UI.XExpandableListView { <init>(...); }
+
+# view res/layout/err_add_activity.xml #generated:10
+# view res/layout/find_ec_circle_detail_activity.xml #generated:19
+# view res/layout/find_ec_circle_tip_list_activity.xml #generated:8
+# view res/layout/find_zh_activity.xml #generated:9
+# view res/layout/find_zs_activity.xml #generated:9
+# view res/layout/inq_main_fragment.xml #generated:17
+# view res/layout/part_search_detail_activity.xml #generated:41
+# view res/layout/part_sys_detail_activity.xml #generated:16
+# view res/layout/part_tip_activity.xml #generated:11
+# view res/layout/register_part_list_activity.xml #generated:12
+# view res/layout/show_notice_list_activity.xml #generated:12
+# view res/layout/work_wdbg_fragement.xml #generated:9
+# view res/layout/work_wdcs_fragement.xml #generated:8
+# view res/layout/work_wdsh_fragement.xml #generated:8
+-keep class com.wq.UI.XListView { <init>(...); }
+
+# view res/layout/ablum_add_activity.xml #generated:44
+# view res/layout/name_card_top_bg_activity.xml #generated:32
+# view res/layout/notice_add_activity.xml #generated:44
+# view res/layout/part_data_detail_activity.xml #generated:338
+# view res/layout/product_add_activity.xml #generated:40
+-keep class com.wq.UI.XgridView { <init>(...); }
+
+# view res/layout/ablum_activity.xml #generated:8
+-keep class com.wq.UI.ablumGallery { <init>(...); }
+
+# view res/layout/find_ec_circle_list_activity.xml #generated:19
+-keep class com.wq.UI.circleListView { <init>(...); }
+
+# view res/layout/auth_apply_activity.xml #generated:93
+# view res/layout/circle_add_activity.xml #generated:52
+# view res/layout/com_ablum_add_activity.xml #generated:51
+# view res/layout/notice_show_activity.xml #generated:43
+-keep class com.wq.UI.horizontalListview.HorizontalVariableListView { <init>(...); }
+
+# view res/layout/part_main_fragment.xml #generated:38
+# view res/layout/staff_manage_activity.xml #generated:38
+-keep class com.wq.UI.indexLayout { <init>(...); }
+
+# view res/layout/product_show_activity.xml #generated:10
+# view res/layout/show_notice_detail_activity.xml #generated:9
+-keep class com.wq.UI.myScrollView { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.wq.WelecomeActivity { <init>(...); }
+
+# view res/layout/find_capture_activity.xml #generated:19
+-keep class com.wq.Zxing.view.ViewfinderView { <init>(...); }
+
+# view AndroidManifest.xml #generated:366
+-keep class com.wq.ablumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:371
+-keep class com.wq.ablumActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:381
+-keep class com.wq.authApplyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:376
+-keep class com.wq.clip.CropImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:360
+-keep class com.wq.editActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:298
+-keep class com.wq.find.CaptureActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:224
+-keep class com.wq.find.captureOtherShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:272
+-keep class com.wq.find.circleRepAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:288
+-keep class com.wq.find.findAddCircleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:262
+-keep class com.wq.find.findEpCircleDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:267
+-keep class com.wq.find.findEpCircleDetailActivity1 { <init>(...); }
+
+# view AndroidManifest.xml #generated:252
+-keep class com.wq.find.findEpCircleListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:282
+-keep class com.wq.find.findTipDetailAcitivy { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class com.wq.find.findTipListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.wq.find.findUseCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:475
+-keep class com.wq.find.findZHActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:481
+-keep class com.wq.find.findZSActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:293
+-keep class com.wq.find.find_conAngencyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:247
+-keep class com.wq.find.find_pyp_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.wq.inquiry.jzActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:418
+-keep class com.wq.localAblumScan.ablum_detail_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:412
+-keep class com.wq.localAblumScan.ablum_main_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:102
+-keep class com.wq.loginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.wq.mainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:520
+-keep class com.wq.me.Edit_mingPActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:559
+-keep class com.wq.me.MeCollectShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:553
+-keep class com.wq.me.MeCollectWZActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:525
+-keep class com.wq.me.MingPListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:598
+-keep class com.wq.me.NameCardQiangActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:593
+-keep class com.wq.me.NameCardTopBgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:571
+-keep class com.wq.me.WorkRepAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:565
+-keep class com.wq.me.WorkRepListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.wq.me.ablumAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:139
+-keep class com.wq.me.ablumMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:144
+-keep class com.wq.me.ablumRepAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:396
+-keep class com.wq.me.about_us_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:501
+-keep class com.wq.me.card_relation_list_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:515
+-keep class com.wq.me.card_relation_select_people_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:119
+-keep class com.wq.me.collectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.wq.me.companyDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.wq.me.erweimaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:443
+-keep class com.wq.me.forgetPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:391
+-keep class com.wq.me.ideaBackActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:608
+-keep class com.wq.me.manage_main_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:386
+-keep class com.wq.me.meComInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:401
+-keep class com.wq.me.meConUsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:450
+-keep class com.wq.me.meProNameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:463
+-keep class com.wq.me.me_name_card_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:124
+-keep class com.wq.me.me_space_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:588
+-keep class com.wq.me.mewebviewShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:457
+-keep class com.wq.me.nameCardEWMActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:469
+-keep class com.wq.me.nameCardplateListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:535
+-keep class com.wq.me.name_card_main_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.wq.me.noticeAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.wq.me.noticeCateActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.wq.me.noticeMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:160
+-keep class com.wq.me.noticeRepAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class com.wq.me.noticeShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:530
+-keep class com.wq.me.proArrListAcvitiy { <init>(...); }
+
+# view AndroidManifest.xml #generated:195
+-keep class com.wq.me.proAttrAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.wq.me.proAttrEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:215
+-keep class com.wq.me.proCateAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:210
+-keep class com.wq.me.proCateListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.wq.me.productAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.wq.me.productMainListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:200
+-keep class com.wq.me.productRepAddActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:185
+-keep class com.wq.me.productShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:508
+-keep class com.wq.me.recodeRelationLog { <init>(...); }
+
+# view AndroidManifest.xml #generated:583
+-keep class com.wq.me.rzfuShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:424
+-keep class com.wq.me.setChangePwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:436
+-keep class com.wq.me.setPwdProtectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:430
+-keep class com.wq.me.setPwdProtectPwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:303
+-keep class com.wq.me.settingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:313
+-keep class com.wq.me.settingTYActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:308
+-keep class com.wq.me.settingYsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.wq.me.showNoticeDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:165
+-keep class com.wq.me.showNoticeListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:603
+-keep class com.wq.me.staffManageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:235
+-keep class com.wq.me.templateDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:240
+-keep class com.wq.me.templateImageShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:230
+-keep class com.wq.me.templateListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:324
+-keep class com.wq.me.visitDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:319
+-keep class com.wq.me.visitMainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:577
+-keep class com.wq.me.workRepDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:355
+-keep class com.wq.partner.part_DetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:346
+-keep class com.wq.partner.part_searchActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:351
+-keep class com.wq.partner.part_searchDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:331
+-keep class com.wq.partner.part_tipActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:336
+-keep class com.wq.partner.part_webview_activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:341
+-keep class com.wq.partner.part_yqaActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:107
+-keep class com.wq.registerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:494
+-keep class com.wq.register_searchComActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:613
+-keep class com.wq.service.deyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:406
+-keep class com.wq.showLogoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.wq.webviewShowActivity { <init>(...); }
+
+# onClick res/layout/ablum_add_activity.xml #generated:79
+# onClick res/layout/ablum_add_activity.xml #generated:87
+# onClick res/layout/com_ablum_add_activity.xml #generated:84
+# onClick res/layout/com_ablum_add_activity.xml #generated:92
+# onClick res/layout/me_com_info_activity.xml #generated:124
+# onClick res/layout/me_com_info_activity.xml #generated:146
+# onClick res/layout/me_com_info_activity.xml #generated:183
+# onClick res/layout/me_com_info_activity.xml #generated:30
+# onClick res/layout/me_com_info_activity.xml #generated:52
+# onClick res/layout/me_com_info_activity.xml #generated:77
+# onClick res/layout/me_com_info_activity.xml #generated:99
+# onClick res/layout/me_con_us_activity.xml #generated:118
+# onClick res/layout/me_con_us_activity.xml #generated:136
+# onClick res/layout/me_con_us_activity.xml #generated:167
+# onClick res/layout/me_con_us_activity.xml #generated:184
+# onClick res/layout/me_con_us_activity.xml #generated:202
+# onClick res/layout/me_con_us_activity.xml #generated:38
+# onClick res/layout/me_con_us_activity.xml #generated:69
+# onClick res/layout/me_con_us_activity.xml #generated:87
+# onClick res/layout/notice_add_activity.xml #generated:127
+# onClick res/layout/notice_add_activity.xml #generated:135
+# onClick res/layout/notice_add_activity.xml #generated:161
+# onClick res/layout/notice_add_activity.xml #generated:169
+# onClick res/layout/notice_add_activity.xml #generated:79
+# onClick res/layout/notice_add_activity.xml #generated:87
+-keepclassmembers class * { *** click(...); }
+
+# onClick res/layout/alert_dialog.xml #generated:57
+-keepclassmembers class * { *** exitbutton0(...); }
+
+# onClick res/layout/alert_dialog.xml #generated:70
+-keepclassmembers class * { *** exitbutton1(...); }
+
+# onClick res/layout/me_main_fragment.xml #generated:26
+-keepclassmembers class * { *** onMyclick(...); }
+
+# onClick res/layout/work_rep_add_activity.xml #generated:134
+# onClick res/layout/work_rep_add_activity.xml #generated:193
+# onClick res/layout/work_rep_add_activity.xml #generated:243
+# onClick res/layout/work_rep_add_activity.xml #generated:83
+-keepclassmembers class * { *** xmlOnclick(...); }
+

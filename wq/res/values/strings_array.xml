@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 访问网站 分享，刷新选项 -->
+    <string-array name="share_dialog_select">
+
+        <!-- <item>分享到生意圈</item> -->
+        <item>1|复制链接</item>
+        <item>2|浏览器中打开</item>
+        <item>3|刷新</item>
+        <item>4|短信</item>
+        <item>5|收藏</item>
+        <item>6|微信好友</item>
+        <item>7|朋友圈</item>
+    </string-array>
+    <string-array name="visit_types">
+        <item>0|网站访问统计</item>
+        <item>1|名片访问统计</item>
+    </string-array>
+    <string-array name="visit_types_detail">
+        <item>0|网站统计详情</item>
+        <item>1|名片统计详情</item>
+    </string-array>
+    <!-- 访问统计 top 下拉选项 目前没有用到 -->
+    <string-array name="visit_time_types">
+        <item>0|当天访问记录</item>
+        <item>1|最近一周访问记录</item>
+        <item>2|最近一月访问记录</item>
+        <item>3|最近一季度访问记录</item>
+        <item>4|最近一年访问记录</item>
+    </string-array>
+    <!-- 消息界面 popup 选项 -->
+    <string-array name="linq_select_types">
+        <item>1|完善手机网站</item>
+        <item>2|完善名片</item>
+        <!-- <item>3|发布生意</item> -->
+        <item>3|写客户日志</item>
+        <item>4|扫一扫</item>
+        <item>5|按一按</item>
+    </string-array>
+    <!--  -->
+    <!-- 添加活动默认类型选项 -->
+    <string-array name="notice_cate_arr">
+        <item>活动</item>
+        <item>促销</item>
+        <item>招聘</item>
+        <item>新闻</item>
+        <item>展会</item>
+        <item>招商</item>
+    </string-array>
+    <!-- 我的名片界面选项 -->
+    <string-array name="name_card_types">
+        <item>0|资料</item>
+        <item>1|模板</item>
+        <item>2|发送名片</item>
+        <item>3|二维码</item>
+    </string-array>
+    <!-- 添加产品显示的默认属性 -->
+    <string-array name="name_pro_attr">
+        <item>价格</item>
+        <item>型号</item>
+        <item>库存</item>
+    </string-array>
+    <!-- 伙伴来源显示 -->
+    <string-array name="part_channel_arr">
+        <item>搜微企号</item>
+        <item>搜企业名称</item>
+        <item>搜经营类型</item>
+        <item>扫一扫</item>
+        <item>换一换名片</item>
+        <item>一起按,换名片</item>
+        <item>生意圈</item>
+        <item>谁关注我</item>
+        <item>其他</item>
+    </string-array>
+    <!-- 周报日报 -->
+    <string-array name="work_rep_arr">
+        <item>1|日报</item>
+        <item>2|周报</item>
+        <item>3|取消</item>
+    </string-array>
+        <string-array name="work_check_rep_arr">
+        <item>1|查看日报</item>
+        <item>2|查看周报</item>
+        <item>3|取消</item>
+    </string-array>
+    <string-array name="work_rep_status">
+        <item>待批阅</item>
+        <item>已批阅</item>
+    </string-array>
+    <string-array name="work_rep_add_title_arr">
+        <item>写日报</item>
+        <item>写周报</item>
+    </string-array>
+    <!-- 我的收藏 -->
+    <string-array name="me_collect_arr">
+        <item>1|文字</item>
+    </string-array>
+    <!-- 日报，周报描述 -->
+    <string-array name="me_collect_day_title">
+        <item>今日工作总结</item>
+        <item>明日工作计划</item>
+    </string-array>
+    <string-array name="me_collect_week_title">
+        <item>本周总结</item>
+        <item>下周计划</item>
+    </string-array>
+    <!-- 二维码扫描 -->
+    <string-array name="mmalert_ewm_sm">
+        <item>1|从相册选择</item>
+        <item>2|取消</item>
+    </string-array>
+    <string-array name="mmalert_ewm_fxbc">
+        <item>1|短信分享</item>
+        <item>2|保存二维码</item>
+        <item>3|取消</item>
+    </string-array>
+    <!-- 权限分配 -->
+    <string-array name="me_fragment_qx">
+        <item>0|在野用户</item>
+        <item>1|收编用户</item>
+        <item>2|管理员</item>
+        <item>3|子管理员</item>
+    </string-array>
+    <!--我的名片  -->
+       <string-array name="popup_wdmp_arr">
+        <item>1|资料</item>
+        <item>2|二维码</item>
+        <item>3|访问统计</item>
+        <item>4|分享</item>
+    </string-array>
+
+</resources>

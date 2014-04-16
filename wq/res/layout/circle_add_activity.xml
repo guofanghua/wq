@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/find_add_circle_txt_title1"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text="@string/find_string_ec_add_pic_tip"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <LinearLayout
+                android:id="@+id/layout_grid"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:background="#fff"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/img_add_pic"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/add_pic_click" />
+
+                <com.wq.UI.horizontalListview.HorizontalVariableListView
+                    android:id="@+id/me_grid_ablum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:listSelector="@android:color/transparent" >
+                </com.wq.UI.horizontalListview.HorizontalVariableListView>
+            </LinearLayout>
+
+           
+
+            <View
+                android:id="@+id/spiltline2"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+            <!-- 标题 -->
+
+            <View
+                android:id="@+id/spiltline3"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <TextView
+                android:id="@+id/find_add_circle_txt_detailexplan"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:background="#f1eff6"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:text="@string/find_string_ec_add_content_tip"
+                android:textSize="16sp" />
+
+            <View
+                android:id="@+id/spiltline4"
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#ccc" />
+
+            <EditText
+                android:id="@+id/find_add_circle_edit_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:focusable="false"
+                android:gravity="top"
+                android:hint="未填写"
+                android:minHeight="150dp"
+                android:padding="10dp"
+                android:textSize="14sp" />
+
+            <!-- 删除产品 -->
+
+            <Button
+                android:id="@+id/notice_btn_del"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_del_click"
+                android:text="@string/me_string_del_notice"
+                android:textColor="#fff"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

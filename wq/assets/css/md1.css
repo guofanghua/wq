@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body{ font-size:16px;}
+.main_div{ margin:0 auto; background:url(../images/index.jpg); overflow:hidden; min-height:960px; min-width:640px; max-height:960px; max-width:640px;}
+
+.head_div{ background:url(../images/head_bg.png); min-width:120px; min-height:120px; 
+max-height:120px; max-width:120px; margin:110px 0 0 40px;
+text-align:center;}
+
+.head_img{margin:0 auto; min-height:101px; max-height:101px;
+max-width:106px; min-width:106px; margin-top:8px; border:0px;}
+
+.info{ padding-left:30px; padding-top:20px;font-family:"Microsoft Yahei";}
+
+.span_name{ font-size:50px;
+ color:#063;}
+ .span_zw{font-size:28px; color:#000; padding-left:10px;}
+ .div_contact{font-size:32px; color:#333; line-height:80px;}
+ 
+ .div_complan{ font-size:40px;
+ color:#063; padding-top:100px; 
+ padding-bottom:20px;}
+ .common_line_txt{font-size:28px; color:#333; line-height:50px;}
+ 
